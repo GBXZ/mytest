@@ -1,0 +1,184 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Aug 15 10:18:17 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 14 August 2018 03:36:15
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: VM_0_7_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/cartest/car
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7282
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Aug 14 2018, 11:22:36)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1046960
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 333504 bytes (325 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1046960 pid: 1221 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 1221, cores: 2)
+spawned uWSGI worker 2 (pid: 1223, cores: 2)
+spawned uWSGI worker 3 (pid: 1224, cores: 2)
+spawned uWSGI worker 4 (pid: 1225, cores: 2)
+[pid: 1223|app: 0|req: 1/1] 182.254.86.150 () {38 vars in 719 bytes} [Wed Aug 15 10:19:24 2018] POST /chat/weixin/?signature=4a322ec597d3b4e20fc2e38079e20ae4fa1750f3&timestamp=1534299563&nonce=1625113678&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 266 bytes in 973 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+Not Found: /cartest/car/
+[pid: 1223|app: 0|req: 2/2] 120.230.127.90 () {42 vars in 789 bytes} [Wed Aug 15 10:20:30 2018] GET /cartest/car/ => generated 2452 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 1225|app: 0|req: 1/3] 120.230.127.90 () {42 vars in 755 bytes} [Wed Aug 15 10:20:30 2018] GET /favicon.ico => generated 2396 bytes in 1027 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1223|app: 0|req: 3/4] 120.230.127.90 () {42 vars in 793 bytes} [Wed Aug 15 10:20:42 2018] GET /cartest/index/ => generated 4717 bytes in 93 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+Not Found: /assets/css/ie10-viewport-bug-workaround.css
+[pid: 1225|app: 0|req: 2/5] 120.230.127.90 () {42 vars in 800 bytes} [Wed Aug 15 10:20:42 2018] GET /assets/css/ie10-viewport-bug-workaround.css => generated 2492 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /assets/js/ie10-viewport-bug-workaround.js
+[pid: 1225|app: 0|req: 3/6] 120.230.127.90 () {42 vars in 781 bytes} [Wed Aug 15 10:20:42 2018] GET /assets/js/ie10-viewport-bug-workaround.js => generated 2486 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 1225|app: 0|req: 4/7] 120.230.127.90 () {42 vars in 845 bytes} [Wed Aug 15 10:20:42 2018] GET /captcha/image/36920b83c3a9a548a1d998c0b9b7909bc58c59cf/ => generated 5208 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 95 bytes (2 switches on core 1)
+Not Found: /assets/js/ie-emulation-modes-warning.js
+[pid: 1224|app: 0|req: 2/8] 120.230.127.90 () {42 vars in 777 bytes} [Wed Aug 15 10:20:42 2018] GET /assets/js/ie-emulation-modes-warning.js => generated 2480 bytes in 953 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /cartest/index/signin.css
+[pid: 1224|app: 0|req: 2/9] 120.230.127.90 () {42 vars in 762 bytes} [Wed Aug 15 10:20:42 2018] GET /cartest/index/signin.css => generated 2488 bytes in 945 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /assets/js/ie10-viewport-bug-workaround.js
+[pid: 1223|app: 0|req: 4/10] 120.230.127.90 () {42 vars in 781 bytes} [Wed Aug 15 10:20:43 2018] GET /assets/js/ie10-viewport-bug-workaround.js => generated 2486 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1223|app: 0|req: 5/11] 120.230.127.90 () {52 vars in 1027 bytes} [Wed Aug 15 10:21:07 2018] POST /cartest/index/ => generated 2 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 107 bytes (1 switches on core 0)
+[pid: 1223|app: 0|req: 6/12] 182.254.86.156 () {38 vars in 717 bytes} [Wed Aug 15 10:21:20 2018] POST /chat/weixin/?signature=632b61ef393cb812ca6d565fac9bec57dbfd407a&timestamp=1534299680&nonce=971481108&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 266 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 1223|app: 0|req: 7/13] 120.230.127.90 () {42 vars in 793 bytes} [Wed Aug 15 10:21:36 2018] GET /cartest/index/ => generated 4717 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+Not Found: /cartest/index/signin.css
+[pid: 1223|app: 0|req: 8/14] 120.230.127.90 () {42 vars in 762 bytes} [Wed Aug 15 10:21:36 2018] GET /cartest/index/signin.css => generated 2488 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /assets/js/ie-emulation-modes-warning.js
+[pid: 1224|app: 0|req: 3/15] 120.230.127.90 () {42 vars in 777 bytes} [Wed Aug 15 10:21:36 2018] GET /assets/js/ie-emulation-modes-warning.js => generated 2480 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1223|app: 0|req: 9/16] 120.230.127.90 () {42 vars in 845 bytes} [Wed Aug 15 10:21:36 2018] GET /captcha/image/c44009d7ead9581e62647cb3950a968febe044e7/ => generated 4622 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 95 bytes (2 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Aug 15 10:32:12 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 14 August 2018 03:36:15
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: VM_0_7_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/cartest/car
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7282
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Aug 14 2018, 11:22:36)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1efc970
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 333504 bytes (325 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1efc970 pid: 2034 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 2034, cores: 2)
+spawned uWSGI worker 2 (pid: 2036, cores: 2)
+spawned uWSGI worker 3 (pid: 2037, cores: 2)
+spawned uWSGI worker 4 (pid: 2038, cores: 2)
+[pid: 2038|app: 0|req: 1/1] 182.254.86.150 () {38 vars in 719 bytes} [Wed Aug 15 10:32:30 2018] POST /chat/weixin/?signature=3903d13368cbdfd9b9ee039dcd72697cadebb8f0&timestamp=1534300350&nonce=1054704934&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 266 bytes in 1166 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2038|app: 0|req: 2/2] 182.254.86.150 () {38 vars in 717 bytes} [Wed Aug 15 10:32:36 2018] POST /chat/weixin/?signature=513fe6f59b31167a95fb1a3a25c63234cd7436db&timestamp=1534300355&nonce=178688827&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 240 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2038|app: 0|req: 3/3] 182.254.86.155 () {38 vars in 719 bytes} [Wed Aug 15 10:32:42 2018] POST /chat/weixin/?signature=3bba50ae2b2513c0e0f098399a7632e05b3dcdd1&timestamp=1534300362&nonce=1944004406&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 240 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2038|app: 0|req: 4/4] 182.254.86.141 () {38 vars in 717 bytes} [Wed Aug 15 10:32:49 2018] POST /chat/weixin/?signature=f0514dca376da523b189b9a58219245e39944122&timestamp=1534300368&nonce=284662632&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 240 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Aug 15 10:36:14 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 14 August 2018 03:36:15
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: VM_0_7_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/cartest/car
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7282
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Aug 14 2018, 11:22:36)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x2719970
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 333504 bytes (325 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2719970 pid: 2293 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 2293, cores: 2)
+spawned uWSGI worker 2 (pid: 2295, cores: 2)
+spawned uWSGI worker 3 (pid: 2296, cores: 2)
+spawned uWSGI worker 4 (pid: 2297, cores: 2)
+[pid: 2295|app: 0|req: 1/1] 182.254.86.140 () {38 vars in 719 bytes} [Wed Aug 15 10:36:27 2018] POST /chat/weixin/?signature=30cd5f531a86fa4719611823e33e291e14de6d09&timestamp=1534300587&nonce=1044778570&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 241 bytes in 997 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2295|app: 0|req: 2/2] 182.254.86.140 () {38 vars in 717 bytes} [Wed Aug 15 10:38:53 2018] POST /chat/weixin/?signature=a6c0b7fe8cf3567678f6956a4b588e7a24fd4c0f&timestamp=1534300733&nonce=362402721&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 241 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Aug 15 11:03:02 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 14 August 2018 03:36:15
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: VM_0_7_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/cartest/car
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7282
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Aug 14 2018, 11:22:36)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1077970
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 333504 bytes (325 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1077970 pid: 3918 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 3918, cores: 2)
+spawned uWSGI worker 2 (pid: 3920, cores: 2)
+spawned uWSGI worker 3 (pid: 3921, cores: 2)
+spawned uWSGI worker 4 (pid: 3922, cores: 2)
+[pid: 3920|app: 0|req: 1/1] 182.254.86.141 () {38 vars in 719 bytes} [Wed Aug 15 11:04:04 2018] POST /chat/weixin/?signature=d8688e26a639b88095d45c996c65eec981f85a9c&timestamp=1534302244&nonce=1273825553&openid=oFy-B5xsCj50DfwOAPa23T3WY2_I => generated 248 bytes in 1111 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
