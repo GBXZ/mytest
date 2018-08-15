@@ -5,8 +5,9 @@ from wechatpy.exceptions import InvalidSignatureException
 from wechatpy.utils import check_signature
 from wechatpy import WeChatClient
 from cartest.models import Carinfo
-
-
+'''
+自定义微信公众号菜单，具体可参照wechatpy文档
+'''
 client = WeChatClient('wx65ecd82cb1ce0559','9c5acf854e9fe944657c775ced596e81')
 client.menu.create(
         {
@@ -24,8 +25,9 @@ client.menu.create(
         ]
         }
 )
-
-
+'''
+首先进行连接验证,验证正确返回echostr
+'''
 WECHAT_TOKEN = 'slh201008'
 @csrf_exempt
 def weixin(request):
